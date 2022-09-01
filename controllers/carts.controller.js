@@ -1,6 +1,6 @@
 
-const { Carts } = require('../database')
-const { Products } = require('../database')
+const { Carts } = require('../database/database')
+const { Products } = require('../database/database')
 
 async function getCart(req, res) {
     let cart = await Carts.findOne({ where: { id: req.usuarioId } })
@@ -16,7 +16,6 @@ async function addProductToCart(req, res) {
     console.log(cart)
 
     if (!!productActual) {
-        // if(cart != null){
         let productsUpdated = cart.products
           
 

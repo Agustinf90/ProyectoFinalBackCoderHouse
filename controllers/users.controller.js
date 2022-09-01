@@ -1,7 +1,7 @@
 const { validationResult } = require('express-validator');
 const bcrypt = require('bcryptjs');
-const { User } = require('../database');
-const { Carts } = require('../database');
+const { User } = require('../database/database');
+const { Carts } = require('../database/database');
 const moment = require('moment');
 const jwt = require('jwt-simple');
 const nodemailer = require('nodemailer');

@@ -1,10 +1,10 @@
 const router = require('express').Router();
 
-const { User } = require('../../database');
+const { User } = require('../../database/database');
 const { check} = require ('express-validator')
 const moment = require('moment');
 const jwt = require('jwt-simple');
-const { Carts } = require('../../database')
+const { Carts } = require('../../database/database')
 const usersControllers = require('../../controllers/users.controller')
 
 router.post('/register', [

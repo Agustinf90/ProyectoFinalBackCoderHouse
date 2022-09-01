@@ -1,7 +1,7 @@
-const { Carts } = require('../database')
-const { User } = require('../database');
+const { Carts } = require('../database/database')
+const { User } = require('../database/database');
 const nodemailer = require('nodemailer');
-const emptyCartFunction = require('../controllers/empty.cart.controller')
+
 
 
 async function checkout(req, res) {
