@@ -10,13 +10,3 @@ module.exports = (sequelize, DataTypes, type) => {
               }
     })
 }
-
-// address: {
-//     type: DataTypes.TEXT,
-//       get: function() {
-//         return JSON.parse(this.getDataValue("address"));
-//       },
-//       set: function(value) {
-//         return this.setDataValue("address", JSON.stringify(value));
-//       }
-//   },

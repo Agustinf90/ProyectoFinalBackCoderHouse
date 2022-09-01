@@ -103,7 +103,7 @@ async function handlingRegister(req, res) {
     
     
       
-            res.json(userActual)
+            res.status(200).json(userActual)
     
         }
     }
@@ -116,7 +116,7 @@ async function handlingLogin(req, res) {
     if (user) {
         const igual = bcrypt.compareSync(req.body.password, user.password)
         if (igual) {
-            res.json({ success: createToken(user) })
+            res.status(200).json({ success: createToken(user) })
         }
         else {
             res.json({ error: 'Error en usuaruo y/o password' })

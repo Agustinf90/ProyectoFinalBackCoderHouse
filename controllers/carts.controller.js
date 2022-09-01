@@ -50,7 +50,7 @@ async function addProductToCart(req, res) {
     }
 }
     let cartUpdated = await Carts.findOne({ where: { id: req.usuarioId } })
-    console.log(cartUpdated)
+
     res.send(cartUpdated)
 }
 
