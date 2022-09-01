@@ -23,7 +23,7 @@ app.use('/api', apiRouter);
 
 // })
 
-app.listen(3000, ()=> {
+app.listen(rocess.env.PORT || 3000, ()=> {
     console.log('listening to port 3000');
     // connection.connect(function(err) {
     //     if(err) throw err;
