@@ -7,7 +7,9 @@ module.exports = (sequelize, type) => {
         },
         name: type.STRING,
         stock: type.INTEGER,
-        price: type.INTEGER
+        price: type.INTEGER,
+        category: type.STRING,
+        image: type.STRING
     })
 }
 

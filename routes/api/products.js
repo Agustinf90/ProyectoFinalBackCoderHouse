@@ -1,30 +1,16 @@
 const router = require('express').Router();
+const mysql = require ('mysql');
 
-const { Products } = require('../../database')
 
-router.get('/', async (req, res)=> {
-    // console.log(req.usuarioId)
-    const products = await Products.findAll();
-    res.json(products)
-})
+const productsController = require('../../controllers/products.controller')
+const uploadController = require('../../controllers/images.controller')
+const isAdmin = require('../../middlewares/isAdmin')
 
-router.post('/', async (req, res)=> {
-    const product = await Products.create(req.body);
-    res.json(product)
-})
-
-router.put('/:productId', async (req, res)=> {
-    await Products.update(req.body, {
-        where: { id: req.params.productId}
-    });
-    res.json({success: 'modificado'})
-})
-
-router.delete('/:productId', async (req, res)=> {
-    await Products.destroy({
-        where: { id: req.params.productId}
-    });
-    res.json({success: 'eliminado'})
-})
+router.get('/', productsController.getProducts)
+router.get('/:productId', productsController.getProductById)
+router.post('/', isAdmin.isAdmin, productsController.createProducts)
+router.put('/:productId', isAdmin.isAdmin, productsController.updateProduct)
+router.delete('/:productId', isAdmin.isAdmin, productsController.deleteProduct)
+router.post('/upload', isAdmin.isAdmin, uploadController.upload, uploadController.uploadFile)
 
 module.exports = router
