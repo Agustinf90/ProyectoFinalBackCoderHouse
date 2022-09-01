@@ -1,4 +1,4 @@
-let is_Admin = false;
+let is_Admin = true;
 
 function isAdmin(req, res, next) {
     if (!is_Admin) {
