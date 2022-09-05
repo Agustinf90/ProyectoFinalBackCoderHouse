@@ -1,11 +1,11 @@
 const router = require('express').Router();
 
 const auth = require('../middlewares/auth')
-const apiProductsRouter = require('../components/products/products')
-const apiUsersRouter = require('../components/users/users')
-const apiCartsRouter = require('../components/carts/carts')
-const apiImagesRouter = require('../components/images/images')
-const apiCheckoutRouter = require('../components/checkout/checkout')
+const apiProductsRouter = require('../components/products/products.route')
+const apiUsersRouter = require('../components/users/users.route')
+const apiCartsRouter = require('../components/carts/carts.route')
+const apiImagesRouter = require('../components/images/images.route')
+const apiCheckoutRouter = require('../components/checkout/checkout.route')
 
 
 router.use('/products' ,apiProductsRouter)
