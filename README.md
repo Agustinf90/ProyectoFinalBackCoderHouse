@@ -1,4 +1,4 @@
-``## Node JS Api - E commerce
+## Node JS Api - E commerce
 This API was made with **Node JS and Express** and was set to work with a remote db with **postgres and sequelize**
 
 ### Deploy:
@@ -28,5 +28,5 @@ https://nodeapi-remote-postgresql.herokuapp.com/api/carts
 https://nodeapi-remote-postgresql.herokuapp.com/api/upload
 https://nodeapi-remote-postgresql.herokuapp.com/api/carts/product/5
 https://nodeapi-remote-postgresql.herokuapp.com/checkout
-https://nodeapi-remote-postgresql.herokuapp.com/static/``
+https://nodeapi-remote-postgresql.herokuapp.com/static/
 
