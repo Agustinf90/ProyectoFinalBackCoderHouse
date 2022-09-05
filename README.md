@@ -20,15 +20,15 @@ You will receive a mail when you are registered and also when you made the check
 You can try the chat made with socket.io at : https://nodeapi-remote-postgresql.herokuapp.com/static/
 
 ### Endpoints:
-``https://nodeapi-remote-postgresql.herokuapp.com/``
-``https://nodeapi-remote-postgresql.herokuapp.com/``
-``https://nodeapi-remote-postgresql.herokuapp.com/``
-``https://nodeapi-remote-postgresql.herokuapp.com/``
-``https://nodeapi-remote-postgresql.herokuapp.com/``
-``https://nodeapi-remote-postgresql.herokuapp.com/``
-``https://nodeapi-remote-postgresql.herokuapp.com/``
-``https://nodeapi-remote-postgresql.herokuapp.com/``
-``https://nodeapi-remote-postgresql.herokuapp.com/``
-``https://nodeapi-remote-postgresql.herokuapp.com/``
-``https://nodeapi-remote-postgresql.herokuapp.com/``
-``https://nodeapi-remote-postgresql.herokuapp.com/``
+- ``https://nodeapi-remote-postgresql.herokuapp.com/``
+- ``https://nodeapi-remote-postgresql.herokuapp.com/``
+- ``https://nodeapi-remote-postgresql.herokuapp.com/``
+- ``https://nodeapi-remote-postgresql.herokuapp.com/``
+- ``https://nodeapi-remote-postgresql.herokuapp.com/``
+- ``https://nodeapi-remote-postgresql.herokuapp.com/``
+- ``https://nodeapi-remote-postgresql.herokuapp.com/``
+- ``https://nodeapi-remote-postgresql.herokuapp.com/``
+- ``https://nodeapi-remote-postgresql.herokuapp.com/``
+- ``https://nodeapi-remote-postgresql.herokuapp.com/``
+- ``https://nodeapi-remote-postgresql.herokuapp.com/``
+- ``https://nodeapi-remote-postgresql.herokuapp.com/``
