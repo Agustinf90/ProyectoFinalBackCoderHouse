@@ -22,6 +22,9 @@ You can try the chat made with socket.io at : `https://nodeapi-remote-postgresql
 ### Upload Images
 You can upload images by adding a file with the key `myFile` at the body at : `https://nodeapi-remote-postgresql.herokuapp.com/static/`. Only Admin is allowed
 
+### Config
+The config file loads environment variables from a .env file (which is not uploaded for security) into process.env to run database and different configurations.
+
 ### Endpoints and Methods:
 - POST ``https://nodeapi-remote-postgresql.herokuapp.com/register``
 - POST ``https://nodeapi-remote-postgresql.herokuapp.com/login``
