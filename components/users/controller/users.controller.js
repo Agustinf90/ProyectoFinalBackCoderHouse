@@ -19,14 +19,14 @@ async function handlingRegister(req, res) {
 
   if (req.body.password !== req.body.passwordVerification) {
     {
-      res.json({ error: "Tus contraseñas no coinciden" });
+      res.status(400).json({ error: "Tus contraseñas no coinciden" });
     }
   } else {
     if (userNameExist || userEmailExist) {
       if (userNameExist) {
-        res.json({ error: "Nombre de usuario ya existe" });
+        res.status(400).json({ error: "Nombre de usuario ya existe" });
       } else {
-        res.json({ error: "Email ya existe" });
+        res.status(400).json({ error: "Email ya existe" });
       }
     } else {
       req.body.password = bcrypt.hashSync(req.body.password, 10);
@@ -64,7 +64,6 @@ async function handlingRegister(req, res) {
         from: "remitente",
         to: userMail,
         subject: "E-commerce Api",
-        // text: mailData
         html: `<div>
                     <h2>Registro Completado!</h2>
                     <table cellspacing="0">
@@ -115,10 +114,10 @@ async function handlingLogin(req, res) {
     if (igual) {
       res.status(200).json({ success: createToken(user) });
     } else {
-      res.json({ error: "Error en usuaruo y/o password" });
+      res.status(400).json({ error: "Error en usuaruo y/o password" });
     }
   } else {
-    res.json({ error: "Error en usuaruo y/o password" });
+    res.status(400).json({ error: "Error en usuaruo y/o password" });
   }
 }
 const createToken = (user) => {

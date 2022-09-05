@@ -70,15 +70,6 @@ async function checkout(req, res) {
         ${JSON.stringify(userData.dataValues.updatedAt)}
         </td>
         </tr>
-
-
-
-
-        <tr class="order-total">
-        <th>Total</th>
-        <td data-title="Total"><strong><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">$</span>1900,80</bdi></span></strong>
-         </td>
-        </tr>
         </tbody></table>	
         </div>`,
   };
@@ -105,7 +96,7 @@ async function checkout(req, res) {
     }
   );
   userRestared = await User.findOne({ where: { id: req.usuarioId } });
-  res.send(userRestared);
+  res.status(200).send(userRestared);
 }
 
 module.exports = {

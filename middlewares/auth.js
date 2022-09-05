@@ -3,7 +3,7 @@ const moment = require("moment");
 
 const checkToken = (req, res, next) => {
   if (!req.headers["user-token"]) {
-    return res.json({ error: "Necesitas incluir el user-token en el header" });
+    return res.status(401).json({ error: "Necesitas incluir el user-token en el header" });
   }
 
   const userToken = req.headers["user-token"];
@@ -11,11 +11,11 @@ const checkToken = (req, res, next) => {
   try {
     payload = jwt.decode(userToken, process.env.TOKEN_PHRASE);
   } catch (err) {
-    return res.json({ error: "el token es incorrecto" });
+    return res.status(401).json({ error: "el token es incorrecto" });
   }
 
   if (payload.expiredAt < moment().unix()) {
-    return res.json({ error: "el token ha expirado" });
+    return res.status(401).json({ error: "el token ha expirado" });
   }
 
   req.usuarioId = payload.usuarioId;
