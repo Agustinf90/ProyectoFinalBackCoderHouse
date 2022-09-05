@@ -20,13 +20,5 @@ You will receive a mail when you are registered and also when you made the check
 You can try the chat made with socket.io at : https://nodeapi-remote-postgresql.herokuapp.com/static/
 
 ### Endpoints:
-https://nodeapi-remote-postgresql.herokuapp.com/api/users/register
-https://nodeapi-remote-postgresql.herokuapp.com/api/users/login
-https://nodeapi-remote-postgresql.herokuapp.com/api/products
-https://nodeapi-remote-postgresql.herokuapp.com/api/products/9
-https://nodeapi-remote-postgresql.herokuapp.com/api/carts
-https://nodeapi-remote-postgresql.herokuapp.com/api/upload
-https://nodeapi-remote-postgresql.herokuapp.com/api/carts/product/5
-https://nodeapi-remote-postgresql.herokuapp.com/checkout
-https://nodeapi-remote-postgresql.herokuapp.com/static/
+At the command prompt, type `nano`
 
