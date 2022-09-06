@@ -4,8 +4,22 @@ This API was made with **Node JS and Express** and was set to work with a remote
 ### Deploy:
 The API was also deployed in heroku: `https://nodeapi-remote-postgresql.herokuapp.com/`
 
-### instructions
+### Instructions
 You can try the project with **-- npm ci --** to install the dependencies in your local, and run it with **-- npm start --** and test it with Postman
+
+### Dependencies/libraries used:
+The API uses : 
+- ``express``
+- ``body-parser``
+- ``dotenv``
+- ``express-validator``
+- ``jwt-simple``
+- ``moment``
+- ``multer``
+- ``nodemailer``
+- ``pg``
+- ``sequelize``
+- ``socket.io``
 
 ### Data required
 You have to add the values required for the different requests in the body to register and login and set the jwt in the headers by indicating user-token and the token.
@@ -35,5 +49,5 @@ The config file loads environment variables from a .env file (which is not uploa
 - POST ``https://nodeapi-remote-postgresql.herokuapp.com/api/upload``
 - GET - POST - UPDATE - DELETE ``https://nodeapi-remote-postgresql.herokuapp.com/api/carts/product/5``
 - UPDATE``https://nodeapi-remote-postgresql.herokuapp.com/api/carts/2``
-- ``https://nodeapi-remote-postgresql.herokuapp.com/static/``
+- CHAT ``https://nodeapi-remote-postgresql.herokuapp.com/static/``
 
