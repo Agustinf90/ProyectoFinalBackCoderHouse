@@ -40,8 +40,8 @@ You can upload images by adding a file with the key `myFile` at the body at : `h
 The config file loads environment variables from a .env file (which is not uploaded for security) into process.env to run database and different configurations.
 
 ### Endpoints and Methods:
-- POST ``https://nodeapi-remote-postgresql.herokuapp.com/register``
-- POST ``https://nodeapi-remote-postgresql.herokuapp.com/login``
+- POST ``https://nodeapi-remote-postgresql.herokuapp.com/api/users/register``
+- POST ``https://nodeapi-remote-postgresql.herokuapp.com/api/users/login``
 - GET ``https://nodeapi-remote-postgresql.herokuapp.com/api/products``
 - GET - POST - UPDATE - DELETE ``https://nodeapi-remote-postgresql.herokuapp.com/api/products/:productId``
 - GET - UPDATE - DELETE ``https://nodeapi-remote-postgresql.herokuapp.com/api/carts``
